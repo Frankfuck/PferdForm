@@ -31,7 +31,7 @@ class SendMail_armo extends Mailable
     public function build()
     {
 
-        return $this->from('pferd@pferd.com.br')->subject('Save The Date: Treinamento de Segurança Online PFERD VSM')
+        return $this->from('yourmail@mail')->subject('Save The Date: Treinamento de Segurança Online PFERD VSM')
             ->view('dynamic_email_template1')->with('data',$this->data);
     }
 }
